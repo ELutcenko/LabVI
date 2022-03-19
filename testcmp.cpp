@@ -16,9 +16,8 @@ cout << "M / 4.45=" << M / 4.45 << endl;
 
 Complex D;
 cout << "Enter complex number D = ";
-
 cin >> D;
-A+=C+D;
+A + = C + D;
 cout << "D = " << D << "\nA = " << A << endl;
 return 0;
 }
