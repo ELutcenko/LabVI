@@ -9,10 +9,10 @@ class Complex
 {
  double Re;
  double Im; 
-  public:
+ public:
 	Complex(double aRe=0, double aIm=0);
 	Complex(const Complex&);
-	~Complex(    );
+	~Complex();
 	void Set(double aRe, double aIm=0);
 	operator double();
  	double abs();
@@ -33,8 +33,8 @@ class Complex
 	Complex& operator *= ( const Complex& );  Complex& operator  += ( const double& );
 	Complex& operator -= ( const double& );
 	Complex& operator  *= (const double& );
-	Complex& operator /= ( const   double & );
-	Complex& operator = (  const   Complex& );
+	Complex& operator /= ( const double & );
+	Complex& operator = (  const Complex& );
 	Complex& operator = ( const double& );
 };
 #endif
