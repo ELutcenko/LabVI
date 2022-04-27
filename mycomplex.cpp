@@ -4,14 +4,14 @@
 
 using namespace std;
 
-Complex :: Complex (double aRe, double   aIm)
-{   
+Complex :: Complex (double aRe, double aIm)
+{ 
  Re=aRe;
  Im=aIm; 
 }
 
 Complex :: Complex (const Complex & aRval)
-{  
+{
  Re=aRval.Re;
  Im=aRval.Im;
 }
@@ -23,13 +23,13 @@ Complex :: ~Complex()
 }
 
 void Complex :: Set (double aRe, double aIm)
-{   
+{ 
  Re=aRe;
  Im=aIm;
 }
 
 Complex :: operator double()
-{  
+{
  return abs();
 }
 
@@ -45,7 +45,7 @@ Complex Complex :: operator +(const Complex & aRval)
  Result.Im = Im + aRval.Im ;
  return Result;
 }
- Complex   Complex :: operator -(const Complex & aRval) 
+ Complex Complex :: operator -(const Complex & aRval) 
 {
  Complex Result;
  Result.Re = Re - aRval.Re;
@@ -68,7 +68,7 @@ Complex Complex :: operator -(const double & aRval)
  return Result;
 }
 
-Complex Complex  :: operator *(const Complex & aRval)
+Complex Complex :: operator *(const Complex & aRval)
 {
  Complex Result;
  Result.Re = Re * aRval.Re-Im*aRval.Im;
@@ -92,7 +92,7 @@ Complex Complex :: operator /(const double & aRval)
  return Result; 
 }
 
-Complex & Complex :: operator +=(const Complex &  arval)
+Complex & Complex :: operator +=(const Complex & arval)
 {
  Re += arval.Re;
  Im += arval.Im;
@@ -125,7 +125,7 @@ Complex & Complex :: operator -=(const double & aRval)
  Re -= aRval;
  return *this;
 }
-Complex & Complex :: operator *=(const  double  &  aRval)
+Complex & Complex :: operator *=(const double & aRval)
 {  
  Re *= aRval;
  Im *= aRval;   
